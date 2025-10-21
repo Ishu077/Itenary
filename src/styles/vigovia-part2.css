@@ -1,0 +1,245 @@
+/* ========== PART 2: FLIGHT & HOTEL SUMMARY ========== */
+
+.part2-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ========== FLIGHT SUMMARY SECTION ========== */
+.flight-summary-section {
+  margin-bottom: 40px;
+}
+
+.flight-summary-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 4px;
+}
+
+.flight-summary-title .title-black {
+  color: #000;
+}
+
+.flight-summary-title .title-purple {
+  color: #6C3EF0;
+}
+
+.flight-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 2px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.flight-row {
+  display: flex;
+  align-items: center;
+  gap:0;
+  border-radius: 8.72px;
+  border: 1px solid #541C9C;
+  background: white;
+}
+
+
+.flight-date-pill {
+  background: #e8d9f8;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8.72px 0 0 8.72px;
+  width: 25%;
+  font-weight: 700;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  /* flex-shrink: 0; */
+  position: relative;
+  margin-right: 16px;
+}
+
+.flight-date-pill::after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 0 22px 15px;
+  border-color: transparent transparent transparent #e8d9f8;
+}
+
+.flight-details {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.flight-details-airline {
+  font-weight: 700;
+  color: #000;
+}
+
+.flight-details-route {
+  font-weight: 400;
+  color: #666;
+}
+
+.flight-note {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 12px;
+  padding-top:5px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eadef8;
+} 
+
+/* ========== HOTEL BOOKINGS SECTION ========== */
+.hotel-bookings-section {
+  margin-bottom: 40px;
+}
+
+.hotel-bookings-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 4px;
+}
+
+.hotel-bookings-title .title-black {
+  color: #000;
+}
+
+.hotel-bookings-title .title-purple {
+  color: #6C3EF0;
+}
+
+.hotel-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px 0;
+  background: white;
+}
+
+.hotel-table-header {
+  background: transparent;
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.hotel-table-header th {
+  background: #321E5D !important;
+  color: white;
+  padding: 16px 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 16px 16px 0 0;
+}
+
+.hotel-table-header th:first-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.hotel-table-header th:last-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.hotel-table-body tr {
+  background: #F3EBFF;
+}
+
+.hotel-table-body tr:last-child {
+  background: #F3EBFF;
+}
+
+.hotel-table-body td {
+  padding: 16px 20px;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: center;
+  border: none;
+  background: #F3EBFF;
+}
+
+.hotel-table-body tr:last-child td {
+  border-radius: 0 0 16px 16px;
+}
+
+.hotel-table-body tr:hover {
+  background: #EFE5FF;
+}
+
+.hotel-table-body tr:hover td {
+  background: #EFE5FF;
+}
+
+.hotel-table-body tr:last-child:hover td {
+  border-radius: 0 0 16px 16px;
+  background: #EFE5FF;
+}
+
+.hotel-name-column {
+  font-weight: 600;
+  color: #4A2CB5;
+  line-height: 1.4;
+}
+
+.hotel-notes {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #eadef8;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.hotel-notes-item {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.hotel-notes-item::before {
+  content: attr(data-number);
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  color: #4A2CB5;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .part2-container {
+    padding: 16px;
+  }
+
+  .flight-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .flight-date-pill {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hotel-table {
+    font-size: 0.85rem;
+  }
+
+  .hotel-table-body td {
+    padding: 12px 16px;
+  }
+}

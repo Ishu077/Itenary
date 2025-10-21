@@ -1,0 +1,296 @@
+/* ========== PART 3: IMPORTANT NOTES, SCOPE OF SERVICES, INCLUSIONS ========== */
+
+.part3-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ========== CARD STYLES ========== */
+.part3-card {
+  background: white;
+  border-radius: 18px;
+  margin-bottom: 36px;
+  overflow: hidden;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); */
+}
+
+.part3-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.part3-card-title .title-black {
+  color: #000;
+}
+
+.part3-card-title .title-purple {
+  color: #762FC6;
+}
+
+/* ========== IMPORTANT NOTES SECTION ========== */
+/* .important-notes-card {
+  padding: 24px;
+} */
+
+.important-notes-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px 0;
+  background: white;
+}
+
+.important-notes-header {
+  background: transparent;
+  color: white;
+}
+
+.important-notes-header th {
+  background: #321E5D !important;
+  color: white;
+  padding: 18px 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 16px 16px 0 0;
+}
+
+.important-notes-header th:first-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.important-notes-header th:last-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.important-notes-body tr {
+  background: #F3EBFF;
+}
+
+.important-notes-body tr:last-child {
+  background: #F3EBFF;
+}
+
+.important-notes-body td {
+  padding: 20px 24px;
+  font-size: 0.95rem;
+  color: #000;
+  text-align: center;
+  border: none;
+  background: #F3EBFF;
+}
+
+.important-notes-body tr:last-child td {
+  border-radius: 0 0 16px 16px;
+}
+
+.important-notes-body tr:hover {
+  background: #EFE5FF;
+}
+
+.important-notes-body tr:hover td {
+  background: #EFE5FF;
+}
+
+.important-notes-body tr:last-child:hover td {
+  border-radius: 0 0 16px 16px;
+  background: #EFE5FF;
+}
+
+/* ========== SCOPE OF SERVICES SECTION ========== */
+/* .scope-services-card {
+  padding: 24px;
+} */
+
+.scope-services-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px 0;
+  background: white;
+}
+
+.scope-services-header {
+  background: transparent;
+  color: white;
+}
+
+.scope-services-header th {
+  background: #321E5D !important;
+  color: white;
+  padding: 18px 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 16px 16px 0 0;
+}
+
+.scope-services-header th:first-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.scope-services-header th:last-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.scope-services-body tr {
+  background: #F3EBFF;
+}
+
+.scope-services-body tr:last-child {
+  background: #F3EBFF;
+}
+
+.scope-services-body td {
+  padding: 20px 24px;
+  font-size: 0.95rem;
+  color: #000;
+  text-align: center;
+  border: none;
+  background: #F3EBFF;
+}
+
+.scope-services-body tr:last-child td {
+  border-radius: 0 0 16px 16px;
+}
+
+.scope-services-body tr:hover {
+  background: #EFE5FF;
+}
+
+.scope-services-body tr:hover td {
+  background: #EFE5FF;
+}
+
+.scope-services-body tr:last-child:hover td {
+  border-radius: 0 0 16px 16px;
+  background: #EFE5FF;
+}
+
+.scope-services-body tr:hover {
+  background: #EFE5FF;
+}
+
+/* ========== INCLUSION SUMMARY SECTION ========== */
+/* .inclusion-summary-card {
+  padding: 40px;
+} */
+
+.inclusion-summary-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px 0;
+  background: white;
+  margin-bottom: 18px;
+}
+
+.inclusion-summary-header {
+  background: transparent;
+  color: white;
+}
+
+.inclusion-summary-header th {
+  background: #321E5D !important;
+  color: white;
+  padding: 18px 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 16px 16px 0 0;
+}
+
+.inclusion-summary-header th:first-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.inclusion-summary-header th:last-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.inclusion-summary-header th:nth-child(2) {
+  text-align: center;
+}
+
+.inclusion-summary-body tr {
+  background: #F3EBFF;
+}
+
+.inclusion-summary-body tr:last-child {
+  background: #F3EBFF;
+}
+
+.inclusion-summary-body td {
+  padding: 20px 24px;
+  font-size: 0.95rem;
+  color: #000;
+  text-align: center;
+  border: none;
+  background: #F3EBFF;
+}
+
+.inclusion-summary-body tr:last-child td {
+  border-radius: 0 0 16px 16px;
+}
+
+.inclusion-summary-body tr:hover {
+  background: #EFE5FF;
+}
+
+.inclusion-summary-body tr:hover td {
+  background: #EFE5FF;
+}
+
+.inclusion-summary-body tr:last-child:hover td {
+  border-radius: 0 0 16px 16px;
+  background: #EFE5FF;
+}
+
+.inclusion-summary-body td:nth-child(2) {
+  text-align: center;
+  font-weight: 600;
+}
+
+.inclusion-summary-body tr:hover {
+  background: #EFE5FF;
+}
+
+.inclusion-note {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid #E8DFF8;
+  line-height: 1.5;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .part3-container {
+    padding: 20px;
+  }
+
+  .important-notes-card,
+  .scope-services-card,
+  .inclusion-summary-card {
+    padding: 20px;
+  }
+
+  .important-notes-body td,
+  .scope-services-body td,
+  .inclusion-summary-body td,
+  .important-notes-header th,
+  .scope-services-header th,
+  .inclusion-summary-header th {
+    padding: 14px 16px;
+    font-size: 0.9rem;
+  }
+
+  .part3-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+}

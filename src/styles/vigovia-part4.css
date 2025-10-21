@@ -1,0 +1,157 @@
+/* ========== PART 4: ACTIVITY TABLE & TERMS AND CONDITIONS ========== */
+
+.part4-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ========== ACTIVITY TABLE SECTION ========== */
+.activity-table-card {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.activity-table-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.activity-table-title .title-black {
+  color: #000;
+}
+
+.activity-table-title .title-purple {
+  color: #7531f9;
+}
+
+.activity-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px 0;
+  background: white;
+}
+
+.activity-table-header {
+  background: transparent;
+  color: white;
+}
+
+.activity-table-header th {
+  background: #321E5D !important;
+  color: white;
+  padding: 18px 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 16px 16px 0 0;
+}
+
+.activity-table-header th:first-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.activity-table-header th:last-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.activity-table-header th:nth-child(3),
+.activity-table-header th:nth-child(4) {
+  text-align: center;
+}
+
+.activity-table-body tr {
+  background: #F3EBFF;
+}
+
+.activity-table-body tr:last-child {
+  background: #F3EBFF;
+}
+
+.activity-table-body td {
+  padding: 20px 16px;
+  font-size: 0.95rem;
+  color: #000;
+  text-align: center;
+  border: none;
+  background: #F3EBFF;
+}
+
+.activity-table-body tr:last-child td {
+  border-radius: 0 0 16px 16px;
+}
+
+.activity-table-body td:nth-child(3),
+.activity-table-body td:nth-child(4) {
+  text-align: center;
+}
+
+.activity-table-body tr:hover {
+  background: #EFE5FF;
+}
+
+.activity-table-body tr:hover td {
+  background: #EFE5FF;
+}
+
+.activity-table-body tr:last-child:hover td {
+  border-radius: 0 0 16px 16px;
+  background: #EFE5FF;
+}
+
+/* ========== TERMS AND CONDITIONS SECTION ========== */
+.terms-conditions-section {
+  margin-top: 24px;
+}
+
+.terms-conditions-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.terms-conditions-title .title-black {
+  color: #000;
+}
+
+.terms-conditions-title .title-purple {
+  color: #7531f9;
+}
+
+.terms-conditions-link {
+  color: #3b8dcc;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.terms-conditions-link:hover {
+  color: #2a6ba3;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .part4-container {
+    padding: 16px;
+  }
+
+  .activity-table-card {
+    padding: 12px 14px;
+  }
+
+  .activity-table-header th,
+  .activity-table-body td {
+    padding: 14px 12px;
+    font-size: 0.9rem;
+  }
+
+  .activity-table-title {
+    font-size: 1rem;
+  }
+}

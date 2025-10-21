@@ -1,0 +1,282 @@
+/* ========== HEADER CONTAINER ========== */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ========== NEW HEADER DESIGN ========== */
+.pdf-header-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.pdf-header-vigovia-new {
+  background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+.header-greeting-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header-greeting {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.header-destination {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.header-duration {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  margin-top: 12px;
+  letter-spacing: 8px;
+  /* gap: 12px; */
+}
+
+/* ========== OVERVIEW CONTAINER ========== */
+.overview-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ========== NEW OVERVIEW CARDS ========== */
+.pdf-overview-cards-new {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+  border: 2px solid #541C9C;
+  border-radius: 30px;
+  /* padding: 20px; */
+  background: white;
+}
+
+.overview-card-new {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-label-new {
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px 0;
+}
+
+.card-value-new {
+  font-size: 1rem;
+  color: #2D1B69;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ========== PART 1: DAILY ITINERARY CONTAINER ========== */
+.part1-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ========== NEW DAILY PLAN CARD ========== */
+
+.daily-plan-card-new {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 0;
+  overflow: visible;
+  justify-content: space-evenly;
+}
+
+.day-badge-left {
+  width: 5%;
+  background: #2D1B69;
+  color: white;
+  padding: 30px 12px;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-align: center;
+  border-radius: 20px;
+  flex-shrink: 0;
+  writing-mode: sideways-lr;
+  text-orientation: mixed;
+  letter-spacing: 2px;
+}
+
+.day-content-wrapper {
+
+  flex-grow: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.day-info-section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.day-image-container {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.day-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.day-date-text {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+  font-weight: 600;
+}
+
+.day-summary-title {
+  font-size: 1rem;
+  color: #2D1B69;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
+/* ========== NEW ACTIVITIES TIMELINE ========== */
+.activities-timeline-new {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  padding-left: 30px;
+  flex-grow: 1;
+  padding-top: 12px;
+}
+
+.activities-timeline-new::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #4A90E2, #7B68EE);
+}
+
+.timeline-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  background: transparent;
+  border-radius: 0;
+  border-left: none;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #4A90E2;
+  flex-shrink: 0;
+}
+
+.timeline-item.morning-item::before {
+  border-color: #321E5D;
+}
+
+.timeline-item.afternoon-item::before {
+  border-color: #321E5D;
+}
+
+.timeline-item.evening-item::before {
+  border-color: #321E5D;
+}
+
+.timeline-marker {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  display: none;
+}
+
+.timeline-content {
+  flex-grow: 1;
+  padding-top: 2px;
+}
+
+.timeline-title {
+  font-size: 0.95rem;
+  color: black;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.timeline-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.timeline-description::before {
+  content: '• ';
+  margin-right: 6px;
+}

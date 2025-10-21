@@ -1,0 +1,298 @@
+/* ========== PART 5: PAYMENT PLAN & VISA DETAILS ========== */
+
+.part5-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ========== PAYMENT PLAN SECTION ========== */
+.payment-plan-section {
+  margin-bottom: 28px;
+}
+
+.payment-plan-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.payment-plan-title .title-black {
+  color: #000;
+}
+
+.payment-plan-title .title-purple {
+  color: #6C3EF0;
+}
+
+.payment-card {
+  background: white;
+  /* border: 3px solid #2692D0; */
+  border-radius: 10px;
+  /* padding: 20px 22px; */
+}
+
+/* ========== CHEVRON ROWS ========== */
+.chevron-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border-radius: 8.72px;
+  border: 1px solid #541C9C;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.chevron-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.chevron-label {
+  background: #e8d9f8;
+  color: #000;
+  width: 25%;
+  padding: 10px 20px;
+  border-radius: 8.72px 0 0 8.72px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+  /* flex-shrink: 0; */
+  margin-right: 16px;
+}
+
+.chevron-label::after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 0 22px 15px;
+  border-color: transparent transparent transparent #e8d9f8;
+}
+
+.chevron-value {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  padding-right: 24px;
+}
+
+/* ========== PAYMENT TABLE ========== */
+.payment-table-section {
+  margin-top: 20px;
+}
+
+.payment-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px 0;
+  background: white;
+}
+
+.payment-table-header {
+  background: transparent;
+  color: white;
+}
+
+.payment-table-header th {
+  background: #321E5D !important;
+  color: white;
+  padding: 18px 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 16px 16px 0 0;
+}
+
+.payment-table-header th:first-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.payment-table-header th:last-child {
+  border-radius: 16px 16px 0 0;
+}
+
+.payment-table-body tr {
+  background: #F3EBFF;
+}
+
+.payment-table-body tr:last-child {
+  background: #F3EBFF;
+}
+
+.payment-table-body td {
+  padding: 20px 16px;
+  font-size: 0.95rem;
+  color: #000;
+  text-align: center;
+  border: none;
+  background: #F3EBFF;
+}
+
+.payment-table-body td:first-child {
+  background: #F3EBFF;
+}
+
+.payment-table-body td:last-child {
+  background: #F3EBFF;
+}
+
+.payment-table-body tr:last-child td {
+  border-radius: 0 0 16px 16px;
+}
+
+.payment-table-body tr:hover {
+  background: #EFE5FF;
+}
+
+.payment-table-body tr:hover td {
+  background: #EFE5FF;
+}
+
+.payment-table-body tr:last-child:hover td {
+  border-radius: 0 0 16px 16px;
+  background: #EFE5FF;
+}
+
+/* ========== VISA DETAILS SECTION ========== */
+.visa-details-section {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.visa-details-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.visa-details-title .title-black {
+  color: #000;
+}
+
+.visa-details-title .title-purple {
+  color: #541C9C;
+}
+
+.visa-capsule {
+  background: white;
+  border: 1px solid #541C9C;
+  border-radius: 30px;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.visa-column {
+  flex: 1;
+  text-align: center;
+}
+
+.visa-column-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.visa-column-value {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #000;
+}
+
+/* ========== DIVIDER ========== */
+.section-divider {
+  height: 1px;
+  background: #541C9C;
+  margin: 28px 0;
+}
+
+/* ========== CTA SECTION ========== */
+.cta-section {
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.cta-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #321E5D;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.book-now-button {
+  background: #541C9C;
+  color: white;
+  border: none;
+  padding: 30px 0;
+  min-width: 180px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.book-now-button:hover {
+  background: #5a2fd1;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .part5-container {
+    padding: 16px;
+  }
+
+  .payment-card {
+    padding: 16px 18px;
+  }
+
+  .chevron-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 10px;
+  }
+
+  .chevron-value {
+    margin-left: 0;
+    margin-top: 8px;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .visa-capsule {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .visa-column {
+    text-align: left;
+  }
+
+  .cta-heading {
+    font-size: 1.4rem;
+  }
+
+  .payment-table-header th,
+  .payment-table-body td {
+    padding: 14px 12px;
+    font-size: 0.9rem;
+  }
+}
