@@ -10,7 +10,7 @@ function OverviewSection({ state, dispatch }) {
 
   return (
     <section className="form-section">
-      Logo
+     
       <h2>📋 Tour Overview</h2>
       <div className="form-grid">
         <div className="form-group">
